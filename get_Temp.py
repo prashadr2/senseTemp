@@ -10,7 +10,7 @@ def get_sense_temp():
     sense_temp = sense.get_temperature()
     return sense_temp
 
-print str(get_sense_temp()) + "," + '%s/%s/%s' % (now.year,now.month,now.day) + "," + '%s:%s:%s' % (now.hour,now.minute,now.second) + "," + pi_name +  "," + location
+print str(get_sense_temp()) + "," + now.isoformat("T") + "," + pi_name +  "," + location
 
 
 
